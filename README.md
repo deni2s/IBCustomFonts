@@ -11,7 +11,7 @@ Tested on iOS6 and iOS7.
     
 Usage:
 
-1) Add this file to your Xcode project
+1) Add UIFonts+IBCustomFonts.m file to your Xcode project
 
 2) Add custom fonts to your application as usual (don't forget to define them in your app Info.plist as "Fonts provided by application" array)
 
