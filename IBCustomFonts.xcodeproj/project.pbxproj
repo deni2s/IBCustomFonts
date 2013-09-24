@@ -22,10 +22,10 @@
 		56E9F08317F0BD4B009D7CAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E9F06217F0BD4B009D7CAD /* UIKit.framework */; };
 		56E9F08B17F0BD4B009D7CAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F08917F0BD4B009D7CAD /* InfoPlist.strings */; };
 		56E9F08D17F0BD4C009D7CAD /* IBCustomFontsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E9F08C17F0BD4B009D7CAD /* IBCustomFontsTests.m */; };
-		56E9F09917F0C45F009D7CAD /* UIFont+IBCustomFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E9F09817F0C45F009D7CAD /* UIFont+IBCustomFonts.m */; };
-		56E9F0A217F0D40C009D7CAD /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F09F17F0D40C009D7CAD /* RobotoSlab-Bold.ttf */; };
-		56E9F0A317F0D40C009D7CAD /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F0A017F0D40C009D7CAD /* RobotoSlab-Light.ttf */; };
-		56E9F0A417F0D40C009D7CAD /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F0A117F0D40C009D7CAD /* RobotoSlab-Regular.ttf */; };
+		56E9F0A817F1D897009D7CAD /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F0A517F1D897009D7CAD /* RobotoSlab-Bold.ttf */; };
+		56E9F0A917F1D897009D7CAD /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F0A617F1D897009D7CAD /* RobotoSlab-Light.ttf */; };
+		56E9F0AA17F1D897009D7CAD /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E9F0A717F1D897009D7CAD /* RobotoSlab-Regular.ttf */; };
+		56E9F0AC17F1D8A7009D7CAD /* UIFont+IBCustomFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E9F0AB17F1D8A7009D7CAD /* UIFont+IBCustomFonts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +59,10 @@
 		56E9F08817F0BD4B009D7CAD /* IBCustomFontsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBCustomFontsTests-Info.plist"; sourceTree = "<group>"; };
 		56E9F08A17F0BD4B009D7CAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56E9F08C17F0BD4B009D7CAD /* IBCustomFontsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBCustomFontsTests.m; sourceTree = "<group>"; };
-		56E9F09817F0C45F009D7CAD /* UIFont+IBCustomFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+IBCustomFonts.m"; path = "UIFont+IBCustomFonts/UIFont+IBCustomFonts.m"; sourceTree = "<group>"; };
-		56E9F09F17F0D40C009D7CAD /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
-		56E9F0A017F0D40C009D7CAD /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
-		56E9F0A117F0D40C009D7CAD /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		56E9F0A517F1D897009D7CAD /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Bold.ttf"; path = "Fonts/RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		56E9F0A617F1D897009D7CAD /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Light.ttf"; path = "Fonts/RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		56E9F0A717F1D897009D7CAD /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Regular.ttf"; path = "Fonts/RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		56E9F0AB17F1D8A7009D7CAD /* UIFont+IBCustomFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+IBCustomFonts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +168,7 @@
 		56E9F09617F0C424009D7CAD /* UIFont+IBCustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				56E9F09817F0C45F009D7CAD /* UIFont+IBCustomFonts.m */,
+				56E9F0AB17F1D8A7009D7CAD /* UIFont+IBCustomFonts.m */,
 			);
 			name = "UIFont+IBCustomFonts";
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 		56E9F09E17F0D3F1009D7CAD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				56E9F09F17F0D40C009D7CAD /* RobotoSlab-Bold.ttf */,
-				56E9F0A017F0D40C009D7CAD /* RobotoSlab-Light.ttf */,
-				56E9F0A117F0D40C009D7CAD /* RobotoSlab-Regular.ttf */,
+				56E9F0A517F1D897009D7CAD /* RobotoSlab-Bold.ttf */,
+				56E9F0A617F1D897009D7CAD /* RobotoSlab-Light.ttf */,
+				56E9F0A717F1D897009D7CAD /* RobotoSlab-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -259,10 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56E9F0A417F0D40C009D7CAD /* RobotoSlab-Regular.ttf in Resources */,
+				56E9F0AA17F1D897009D7CAD /* RobotoSlab-Regular.ttf in Resources */,
 				56E9F07517F0BD4B009D7CAD /* Main_iPad.storyboard in Resources */,
-				56E9F0A217F0D40C009D7CAD /* RobotoSlab-Bold.ttf in Resources */,
-				56E9F0A317F0D40C009D7CAD /* RobotoSlab-Light.ttf in Resources */,
+				56E9F0A817F1D897009D7CAD /* RobotoSlab-Bold.ttf in Resources */,
+				56E9F0A917F1D897009D7CAD /* RobotoSlab-Light.ttf in Resources */,
 				56E9F07A17F0BD4B009D7CAD /* Images.xcassets in Resources */,
 				56E9F07217F0BD4B009D7CAD /* Main_iPhone.storyboard in Resources */,
 				56E9F06917F0BD4B009D7CAD /* InfoPlist.strings in Resources */,
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56E9F07817F0BD4B009D7CAD /* ViewController.m in Sources */,
-				56E9F09917F0C45F009D7CAD /* UIFont+IBCustomFonts.m in Sources */,
+				56E9F0AC17F1D8A7009D7CAD /* UIFont+IBCustomFonts.m in Sources */,
 				56E9F06F17F0BD4B009D7CAD /* AppDelegate.m in Sources */,
 				56E9F06B17F0BD4B009D7CAD /* main.m in Sources */,
 			);
