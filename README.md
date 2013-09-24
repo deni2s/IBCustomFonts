@@ -5,7 +5,7 @@ IBCustomFonts category allows you to use custom fonts from Interface Builder (IB
 
 Apps using IBCustomFonts category are approved by Apple App Store (as of September 2013).
 
-No need to use IBOutlets, sublclasing of UILabels and UIButtons or change fonts in code.
+No need to use IBOutlets, subclassing of UILabels and UIButtons or change fonts in code.
 
 Tested on iOS6 and iOS7.
     
