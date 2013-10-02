@@ -53,7 +53,10 @@ static NSDictionary *iBCustomFontsDict;
 +(UIFont*)new_fontWithName:(NSString*)fontName size:(CGFloat)fontSize traits:(int)traits {
 	return [self new_fontWithName:[iBCustomFontsDict objectForKey:fontName] ?: fontName size:fontSize traits:traits];
 }
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
 +(UIFont*)new_fontWithDescriptor:(UIFontDescriptor*)descriptor size:(CGFloat)fontSize {
     return [self new_fontWithDescriptor:[UIFontDescriptor fontDescriptorWithName:[iBCustomFontsDict objectForKey:[descriptor.fontAttributes objectForKey:UIFontDescriptorNameAttribute]] ?: [descriptor.fontAttributes objectForKey:UIFontDescriptorNameAttribute] size:fontSize] size:fontSize];
 }
+#endif
 @end
