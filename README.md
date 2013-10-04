@@ -20,3 +20,11 @@ Usage
     For example: `HelveticaNeue-Regular` and `CustomFont-Regular`.
     
 4) In previous example in IB use *HelveticaNeue-Regular* in places where do you want to see your *CustomFont-Regular* at runtime.
+
+App Store acceptance
+====================
+
+September, 2013 - App Store accepted app with price tier 10 ($9.99)
+October 4th, 2013 - App Store accepted free app with in-app purchases with price tier 10 ($9.99)
+
+Please let me know if you have your app accepted or rejected on App Store by writing details to e-mail deni2s at hc.lv, so we can update this list with latest info.
