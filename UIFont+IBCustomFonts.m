@@ -56,7 +56,8 @@ static NSDictionary *iBCustomFontsDict;
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
 +(UIFont*)new_fontWithDescriptor:(UIFontDescriptor*)descriptor size:(CGFloat)fontSize {
-    return [self new_fontWithDescriptor:[UIFontDescriptor fontDescriptorWithName:[iBCustomFontsDict objectForKey:[descriptor.fontAttributes objectForKey:UIFontDescriptorNameAttribute]] ?: [descriptor.fontAttributes objectForKey:UIFontDescriptorNameAttribute] size:fontSize] size:fontSize];
+    NSString* newName = [iBCustomFontsDict objectForKey:[descriptor.fontAttributes objectForKey:UIFontDescriptorNameAttribute]];
+    return [self new_fontWithDescriptor: newName ? [UIFontDescriptor fontDescriptorWithName:newName size:fontSize] : descriptor size:fontSize];
 }
 #endif
 @end
