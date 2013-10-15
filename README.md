@@ -28,4 +28,8 @@ September, 2013 - App Store accepted app with price tier 10 ($9.99)
 
 October 4th, 2013 - App Store accepted free app with in-app purchases with price tier 10 ($9.99)
 
+October 15th, 2013 - App Store accepted free app with in-app purchase with price tier 1 ($0.99)
+
+https://itunes.apple.com/us/app/crossword-cracker/id714042812?ls=1&mt=8
+
 Please let me know if you have your app accepted or rejected on App Store by writing details to e-mail deni2s at hc.lv, so we can update this list with latest info.
