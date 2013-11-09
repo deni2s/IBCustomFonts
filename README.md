@@ -23,6 +23,7 @@ Usage
 
 App Store acceptance
 ====================
+November 9th, 2013 - App Store accepted free app.
 
 September, 2013 - App Store accepted app with price tier 10 ($9.99)
 
