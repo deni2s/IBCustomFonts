@@ -23,6 +23,10 @@ Usage
 
 App Store acceptance
 ====================
+December 9th, 2013 - App Store accepted free app.
+
+https://itunes.apple.com/lv/app/pantini/id769408805?mt=8
+
 November 9th, 2013 - App Store accepted free app.
 
 September, 2013 - App Store accepted app with price tier 10 ($9.99)
