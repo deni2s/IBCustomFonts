@@ -23,6 +23,10 @@ Usage
 
 App Store acceptance
 ====================
+January 19th, 2014 - App Store accepted free app.
+
+https://itunes.apple.com/gb/app/madness-information-service/id797084136?mt=8
+
 December 9th, 2013 - App Store accepted free app.
 
 https://itunes.apple.com/lv/app/pantini/id769408805?mt=8
