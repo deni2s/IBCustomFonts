@@ -33,18 +33,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 
+const static NSString* IBCustomFontsKey = @"IBCustomFonts";
+
+void standard_swizzle(Class cls, SEL original, SEL replacement) {
+    Method originalMethod;
+    if ((originalMethod = class_getClassMethod(cls, original))) { //selectors for classes take priority over instances should there be a -propertyName and +propertyName
+        Method replacementMethod = class_getClassMethod(cls, replacement);
+        method_exchangeImplementations(originalMethod, replacementMethod);  //because class methods are really just statics, there's no method heirarchy to perserve, so we can directly exchange IMPs
+    } else {
+        //get the replacement IMP
+        //set the original IMP on the replacement selector
+        //try to add the replacement IMP directly to the class on original selector
+        //if it succeeds then we're all good (the original before was located on the superclass)
+        //if it doesn't then that means an IMP is already there so we have to overwrite it
+        IMP replacementImplementation = method_setImplementation(class_getInstanceMethod(cls, replacement), class_getMethodImplementation(cls, original));
+        if (!class_addMethod(cls, original, replacementImplementation, method_getTypeEncoding(class_getInstanceMethod(cls, replacement)))) method_setImplementation(class_getInstanceMethod(cls, original), replacementImplementation);
+    }
+}
+
 @interface UIFont (IBCustomFonts)
 @end
 
 @implementation UIFont (IBCustomFonts)
 static NSDictionary *iBCustomFontsDict;
 
-+(void)load {
-    iBCustomFontsDict = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"IBCustomFonts"];
-    NSArray *methods = @[@"fontWithName:size:", @"fontWithName:size:traits:", @"fontWithDescriptor:size:"];
-    for (NSString* methodName in methods) {
-        Method from = class_getClassMethod([UIFont class], NSSelectorFromString(methodName)), to = class_getClassMethod([UIFont class], NSSelectorFromString([NSString stringWithFormat:@"new_%@",methodName]));
-        if (from && to && strcmp(method_getTypeEncoding(from), method_getTypeEncoding(to)) == 0) method_exchangeImplementations(from, to);
++ (void) initialize {
+    if (self == [UIFont class]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            iBCustomFontsDict = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"IBCustomFonts"];
+            NSArray *methods = @[@"fontWithName:size:", @"fontWithName:size:traits:", @"fontWithDescriptor:size:"];
+            for (NSString* methodName in methods) {
+                standard_swizzle(self, NSSelectorFromString(methodName), NSSelectorFromString([NSString stringWithFormat:@"new_%@", methodName]));
+            }
+        });
     }
 }
 +(UIFont*)new_fontWithName:(NSString*)fontName size:(CGFloat)fontSize {
