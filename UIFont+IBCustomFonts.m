@@ -61,7 +61,7 @@ static NSDictionary *iBCustomFontsDict;
     if (self == [UIFont class]) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            iBCustomFontsDict = [[NSBundle mainBundle] objectForInfoDictionaryKey:IBCustomFontsKey];
+            iBCustomFontsDict = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)IBCustomFontsKey];
             NSArray *methods = @[@"fontWithName:size:", @"fontWithName:size:traits:", @"fontWithDescriptor:size:"];
             for (NSString* methodName in methods) {
                 standard_swizzle(self, NSSelectorFromString(methodName), NSSelectorFromString([NSString stringWithFormat:@"new_%@", methodName]));
