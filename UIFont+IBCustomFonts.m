@@ -39,7 +39,7 @@ void standard_swizzle(Class cls, SEL original, SEL replacement) {
     Method originalMethod;
     if ((originalMethod = class_getClassMethod(cls, original))) { //selectors for classes take priority over instances should there be a -propertyName and +propertyName
         Method replacementMethod = class_getClassMethod(cls, replacement);
-        method_exchangeImplementations(originalMethod, replacementMethod);  //because class methods are really just statics, there's no method heirarchy to perserve, so we can directly exchange IMPs
+        method_exchangeImplementations(originalMethod, replacementMethod);  //because class methods are really just statics, there's no method hierarchy to preserve, so we can directly exchange IMPs
     } else {
         //get the replacement IMP
         //set the original IMP on the replacement selector
