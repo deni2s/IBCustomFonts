@@ -7,7 +7,7 @@ Apps using **IBCustomFonts** category are **approved by Apple App Store**.
 
 No need to use *IBOutlets*, subclassing of *UILabels* and *UIButtons* or change fonts in code.
 
-Tested on iOS6, iOS7 and iOS8.
+Tested on iOS6 - iOS9.
     
 Usage
 =====
@@ -23,6 +23,8 @@ Usage
 
 App Store acceptance
 ====================
+October 13th, 2015 - App Store accepted free app with in-app purchases with price tier 10 ($9.99)
+
 January 19th, 2014 - App Store accepted free app.
 
 https://itunes.apple.com/gb/app/madness-information-service/id797084136?mt=8
@@ -34,8 +36,6 @@ https://itunes.apple.com/lv/app/pantini/id769408805?mt=8
 November 9th, 2013 - App Store accepted free app.
 
 September, 2013 - App Store accepted app with price tier 10 ($9.99)
-
-October 4th, 2013 - App Store accepted free app with in-app purchases with price tier 10 ($9.99)
 
 October 15th, 2013 - App Store accepted free app with in-app purchase with price tier 1 ($0.99)
 
