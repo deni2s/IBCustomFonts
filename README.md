@@ -12,7 +12,7 @@ Tested on iOS6 - iOS9.
 Usage
 =====
 
-1) Add *UIFonts+IBCustomFonts.m* file to your Xcode project
+1) Add *UIFonts+IBCustomFonts.m* file to your Xcode project or, if using CocoaPods, add a pod entry for IBCustomFonts to your Podfile *pod 'IBCustomFonts'* and install the pod(s) by running *pod install*.
 
 2) Add custom fonts to your application as usual (don't forget to define them in your app `Info.plist` as `Fonts provided by application` array)
 
