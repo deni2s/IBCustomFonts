@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "IBCustomFonts"
-  s.version      = "1.0.1"
+  s.version      = s.version.to_s
   s.summary      = "IBCustomFonts category allows you to use custom fonts from Interface Builder (IB) when building your iOS apps."
 
   s.description  = <<-DESC
