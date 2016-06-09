@@ -13,13 +13,12 @@ Usage
 =====
 
 1. Add *UIFonts+IBCustomFonts.m* file to your Xcode project or, if using CocoaPods, add pod `'IBCustomFonts', '~> 1.0'` similar to the following to your Podfile:
-
-```ruby
-target 'MyApp' do
-  pod 'IBCustomFonts', '~> 1.0'
-end
-```
-`pod 'IBCustomFonts'` and install the pod(s) by running `pod install`.
+    ```ruby
+    target 'MyApp' do
+      pod 'IBCustomFonts', '~> 1.0'
+    end
+    ```
+and install the pod(s) by running `pod install`.
 
 2. Add custom fonts to your application as usual (don't forget to define them in your app `Info.plist` as `Fonts provided by application` array)
 
