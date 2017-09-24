@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.author             = { "Deniss Fedotovs" => "deni2s@hc.lv" }
   s.social_media_url   = "http://linkedin.com/in/deni2s"
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/deni2s/IBCustomFonts.git", :tag => s.version.to_s, :commit => "d1fe90203b528c0676c146811e8c41e1f70d2d86" }
+  s.source       = { :git => "https://github.com/deni2s/IBCustomFonts.git", :tag => s.version.to_s, :commit => "d69eadf868b56a7e51abc626b9574c2bd021d220" }
   s.source_files  = "UIFont+IBCustomFonts.m"
   s.requires_arc = false
 
