@@ -7,7 +7,7 @@ About IBCustomFonts
 
 * No need to use *IBOutlets*, subclassing of *UILabels* and *UIButtons* or change fonts in code.
 
-* Tested on iOS6 - iOS9.
+* Tested on iOS6 - iOS11.
     
 Usage
 =====
@@ -16,7 +16,7 @@ Usage
 
 ```ruby
 target 'MyApp' do
-  pod 'IBCustomFonts', '~> 1.0'
+  pod 'IBCustomFonts', '~> 1.1'
 end
 ```
 `pod 'IBCustomFonts'` and install the pod(s) by running `pod install`.

@@ -18,6 +18,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+//    for (UIView *view in self.view.subviews) {
+//        if ([view isKindOfClass:[UILabel class]]) {
+//            UILabel* label = (UILabel*)view;
+//            NSLog(@"new font: %@", label.font.fontName);
+//        }
+//    }
 }
 
 - (void)didReceiveMemoryWarning
