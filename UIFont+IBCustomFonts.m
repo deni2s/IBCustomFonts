@@ -80,12 +80,10 @@ static NSDictionary *iBCustomFontsDict;
     return [self new_fontWithDescriptor:newName ? [UIFontDescriptor fontDescriptorWithName:newName size:fontSize] : descriptor size:fontSize];
 }
 #endif
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 110000
 +(UIFont*)new__fontWithDescriptor:(UIFontDescriptor*)descriptor size:(double)fontSize textStyleForScaling:(NSString*)style pointSizeForScaling:(double)arg4 maximumPointSizeAfterScaling:(double)arg5 forIB:(bool)arg6{
     NSString* newName = iBCustomFontsDict[descriptor.fontAttributes[UIFontDescriptorNameAttribute]];
 //    NSLog(@"IBCustomFonts oldFont: %@", descriptor.fontAttributes[UIFontDescriptorNameAttribute]);
 //    NSLog(@"IBCustomFonts newFont: %@", newName);
     return [self new__fontWithDescriptor:(newName ? [UIFontDescriptor fontDescriptorWithName:newName size:fontSize] : descriptor) size:fontSize textStyleForScaling:style pointSizeForScaling:arg4 maximumPointSizeAfterScaling:arg5 forIB:arg6];
 }
-#endif
 @end
